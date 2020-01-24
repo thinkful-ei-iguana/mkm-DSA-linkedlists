@@ -8,10 +8,10 @@ function main() {
   cycleList.insertLast('1');
   cycleList.insertLast('2');
   cycleList.insertLast('3');
-  cycleList.insertBefore('4', '1');
-  cycleList.insertFirst('5');
+  cycleList.insertLast('4');
+  cycleList.insertBefore('5', '1');
 
-  cycleList.find('3').next = cycleList.find('4');
+  cycleList.find('1').next = cycleList.find('5');
 
 
   SLL.insertLast('Apollo');
@@ -181,7 +181,7 @@ function cycle(linkedList) {
   }
   return false;
 }
-// console.log(cycle(cycleList));
+console.log(cycle(cycleList));
 
 // 9. Doubly Linked List
 
